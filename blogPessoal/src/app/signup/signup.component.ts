@@ -39,7 +39,7 @@ export class SignupComponent implements OnInit {
     } else {
       this.authService.signup(this.user).subscribe((resp: User) =>{
         this.user = resp
-        this.router.navigate(['/entrar'])
+        this.router.navigate(['/login'])
         alert('Usuário cadastrado com sucesso!')
       }) 
     }
