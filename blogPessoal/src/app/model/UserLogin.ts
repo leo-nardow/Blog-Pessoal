@@ -1,3 +1,5 @@
+import { Post } from "./Post"
+
 export class UserLogin{
     public idUser: number
     public name: string
@@ -6,4 +8,5 @@ export class UserLogin{
     public token: string
     public photo: string
     public type: string
+    public post: Post[]
 }
