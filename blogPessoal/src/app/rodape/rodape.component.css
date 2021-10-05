@@ -11,14 +11,25 @@ ul.social-network li{
     display: inline;
 }
 
+.bg {
+    background-color: #FF7070;
+}
+
 .fa{
     font-size: 50px;
     color: #222222;
     padding: 10px;
 }
-
+.social-network{
+    width: 50px;
+    height: 50px;
+}
 .fa-github:hover{
     color:#20252C;
+}
+
+.fa-envelope:hover{
+    color: red;
 }
 
 .fa-linkedin-square:hover{
@@ -27,4 +38,53 @@ ul.social-network li{
 
 .fa-instagram:hover {
     color: #C13584;
+}
+/* footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} */
+.tbolder{
+    font-family: 'Mali', cursive;
+    font-weight: 700;
+}
+.tbold{
+    font-family: 'Mali', cursive;
+    font-weight: 700;
+}
+.tnormal{
+    font-family: 'Mali', cursive;
+    font-weight: 500;
+}
+.tlight{
+    font-family: 'Mali', cursive;
+    font-weight: 400;
+}
+.tlighter{
+    font-family: 'Mali', cursive;
+    font-weight: 300;
+}
+
+.bg-btn{
+    background-color: transparent;
+    color: #000;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-width: 1px;
+}
+.bg-btn:hover{
+    background-color: #EC5B67;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f7f7f7;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+h4{
+    font-family: 'Mali', cursive;
+    font-weight: 600;
 }

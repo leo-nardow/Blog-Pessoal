@@ -1,31 +1,88 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+<nav class="navbar navbar-expand-lg navbar-light bg shadow pt-2">
   <div class="container-fluid">
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
-        <li class="nav-item">
-          <img src="" alt="Imagem do Usuario" width="50px" height="50px" class="img-fluid rounded-circle">
-        </li>
-        <li class="nav-item ps-3">
-          <p class="m-0 fw-bold text-light fs-16">Nome do Usuário</p>
-        </li>
 
-        <li class="nav-item ps-3">
-          <a href="">
-            <p class="text-white fs-16 m-0">
-              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-            </p>
-          </a>
+    <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
+        <li class="nav-item">
+          <img src="" alt="Logo do site" width="50px" height="50px" class="img-fluid rounded-circle">
         </li>
       </ul>
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+
+
+      <form class="d-flex ">
+        <input class="form-control tlight pe-5" type="search" placeholder="Procurar receita" aria-label="Search">
+        <button class="btn bg-btn fw-bold fs-5 btf" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+
+
+      <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
+        <div>
+          <button class="me-3 btn bg-btn tnormal">Iniciar sessão</button>
+        </div>
+        <li class="nav-item">
+          <img src="../../assets/img/icone.png" alt="Imagem do Usuario" width="70px" height="70px"
+            class="img-fluid rounded-circle">
+        </li>
         <a href="">
-          <p class="m-0 fw-bold text-light fs-16 pe-3">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></p>
+          <p class="m-0 fw-bold text-light fs-16 pe-3"><i class="ms-3 fa fa-sign-out" aria-hidden="true"></i></p>
         </a>
       </ul>
+
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bgs shadow sticky-top p-0">
+  <div class="container-fluid p-0">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class=" collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+
+      <ul class="col-9 navbar-nav d-flex justify-content-between">
+
+        <li class="nav-item">
+          <a class="nav-link fs-5 tnormal pbtn" href="#">Massas</a>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link fs-5 tnormal pbtn" href="#">Básico</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fs-5 tnormal pbtn" href="#">Saladas</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fs-5 tnormal pbtn" href="#">Doces</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fs-5 tnormal pbtn" href="#">Vegan</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fs-5 tnormal pbtn" href="#">Bebidas</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fs-5 tnormal pbtn" href="#">Lanches</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fs-5 tnormal pbtn" href="#">Maratonando</a>
+        </li>
+
+      </ul>
+
     </div>
   </div>
 </nav>
