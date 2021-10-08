@@ -26,7 +26,7 @@
           <button type="button" class="me-3 btn bg-btn tnormal" data-bs-toggle="modal" data-bs-target="#newRecipe">Nova receita</button>
         </div>
         <div>
-          <a class="me-3 btn bg-btn tnormal" href="#recipes">Ver receitas</a>
+          <a class="me-3 btn bg-btn tnormal" routerLink='/recipe'>Ver receitas</a>
           
         </div>
         <li class="nav-item">
@@ -114,7 +114,7 @@
           <textarea class="form-control " name="description" id="description" rows="5"></textarea>
         </div>
         <div class="form-group">
-          <label for="description">Escolha o tema ou <a href="">cadastre um novo</a>: </label>
+          <label for="description">Escolha o tema ou <a data-bs-dismiss="modal" routerLink='/theme'>cadastre um novo</a>: </label>
           <select name="theme" id="theme" class="form-select">
             <option value="">Temas</option>
           </select>
