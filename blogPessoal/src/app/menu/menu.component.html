@@ -23,14 +23,21 @@
 
       <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
         <div>
-          <button class="me-3 btn bg-btn tnormal">Iniciar sessão</button>
+          <button type="button" class="me-3 btn bg-btn tnormal" data-bs-toggle="modal" data-bs-target="#newRecipe">Nova receita</button>
+        </div>
+        <div>
+          <a class="me-3 btn bg-btn tnormal" href="#recipes">Ver receitas</a>
+          
         </div>
         <li class="nav-item">
-          <img src="../../assets/img/icone.png" alt="Imagem do Usuario" width="70px" height="70px"
+          <p>{{name}}</p>
+        </li>
+        <li class="nav-item">
+          <img src="{{photo}}" alt="Imagem do Usuario" width="70px" height="70px"
             class="img-fluid rounded-circle">
         </li>
         <a href="">
-          <p class="m-0 fw-bold text-light fs-16 pe-3"><i class="ms-3 fa fa-sign-out" aria-hidden="true"></i></p>
+          <a class="m-0 fw-bold text-light fs-16 pe-3"><i (click)='signout()' class="ms-3 fa fa-sign-out" aria-hidden="true"></i></a>
         </a>
       </ul>
 
@@ -86,3 +93,38 @@
     </div>
   </div>
 </nav>
+
+
+<!-- Modal -->
+<div class="modal fade" id="newRecipe" tabindex="-1" aria-labelledby="newRecipeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newRecipeLabel">Nova Receita</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="title">Nome da Receita</label>
+          <input type="text" class="form-control" id="title" placeholder="Digite o nome da receita">
+        </div>
+        <div class="form-group">
+          <label for="description">Descrição da receita</label>
+          <textarea class="form-control " name="description" id="description" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="description">Escolha o tema ou <a href="">cadastre um novo</a>: </label>
+          <select name="theme" id="theme" class="form-select">
+            <option value="">Temas</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-success">Publicar</button>
+      </div>
+    </div>
+  </div>
+</div>

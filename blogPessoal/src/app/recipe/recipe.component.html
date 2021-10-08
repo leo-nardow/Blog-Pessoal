@@ -1,0 +1,40 @@
+<app-menu></app-menu>
+<div id="recipes" class="container mb-5 mt-5">
+    <div class="row d-flex justify-content-center">
+        <nav>
+            <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+
+                <button class="nav-link active text-secondary fw-bold" id="nav-allRecipes-tab" data-bs-toggle="tab"
+                    data-bs-target="#allRecipes" type="button" role="tab" aria-controls="nav-allRecipes"
+                    aria-selected="true">Todas as Receitas</button>
+
+                <button class="nav-link text-secondary fw-bold" id="nav-myRecipes-tab" data-bs-toggle="tab"
+                    data-bs-target="#myRecipes" type="button" role="tab" aria-controls="nav-myRecipes"
+                    aria-selected="false">Minhas Receitas</button>
+
+                <button class="nav-link text-secondary fw-bold" id="nav-themeRecipes-tab" data-bs-toggle="tab"
+                    data-bs-target="#themeRecipes" type="button" role="tab" aria-controls="nav-themeRecipes"
+                    aria-selected="false">Receitas por Tema</button>
+
+            </div>
+        </nav>
+
+
+        <div class="tab-content d-flex justify-content-center" id="nav-tabContent">
+
+            <div class="tab-pane fade show active" id="allRecipes" role="tabpanel" aria-labelledby="nav-allRecipes-tab">
+                Todas as Receitas
+            </div>
+
+            <div class="tab-pane fade" id="myRecipes" role="tabpanel" aria-labelledby="nav-myRecipes-tab">
+                Minhas Receitas
+            </div>
+
+            <div class="tab-pane fade" id="themeRecipes" role="tabpanel" aria-labelledby="nav-themeRecipes-tab">
+                Receitas por Tema
+            </div>
+
+        </div>
+    </div>
+</div>
+<app-rodape></app-rodape>
