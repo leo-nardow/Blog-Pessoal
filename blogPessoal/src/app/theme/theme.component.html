@@ -47,8 +47,8 @@
                     <th>{{theme.idTheme}}</th>
                     <td>{{theme.theme}}</td>
                     <td class="d-flex justify-content-end">
-                      <button class="btn btn-info me-3">Editar</button>
-                      <button class="btn btn-danger">Apagar</button>
+                      <button class="btn btn-info me-3" [routerLink]="['/theme-edit', theme.idTheme]">Editar</button>
+                      <button class="btn btn-danger" [routerLink]="['/theme-delete', theme.idTheme]">Apagar</button>
                     </td>
                     <!-- <td>{{theme.description}}</td> -->
                   </tr> 
