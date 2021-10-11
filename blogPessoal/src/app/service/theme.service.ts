@@ -22,7 +22,7 @@ export class ThemeService {
   }
 
   getByIdTheme(idTheme: number): Observable<Theme> {
-    return this.http.get<Theme>(`https://blogpessoalleo.herokuapp.com/theme/id/${idTheme}`)
+    return this.http.get<Theme>(`https://blogpessoalleo.herokuapp.com/theme/id/${idTheme}`,this.token)
   }
 
   postTheme(theme: Theme):Observable<Theme>{
@@ -34,6 +34,6 @@ export class ThemeService {
   }
 
   deleteTheme(idTheme: number) {
-    return this.http.delete(`https://blogpessoalleo.herokuapp.com/theme/delete/${idTheme}`)
+    return this.http.delete(`https://blogpessoalleo.herokuapp.com/theme/delete/${idTheme}`,this.token)
   }
 }
