@@ -9,8 +9,11 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class HomeComponent implements OnInit {
 
+
+
   constructor(
-    private router: Router
+    private router: Router,
+    
   ) { }
 
   ngOnInit() {
@@ -18,7 +21,12 @@ export class HomeComponent implements OnInit {
       alert('Sua sessão expirou, faça o login novamente.')
       this.router.navigate(['/login'])
     }
+
+
   }
+
+
+
   recipe() {
     this.router.navigate(['/recipe'])
   }

@@ -19,10 +19,22 @@
         </nav>
 
 
-        <div class="tab-content d-flex justify-content-center" id="nav-tabContent">
+        <div class="tab-content mt-5 d-flex justify-content-center" id="nav-tabContent">
 
             <div class="tab-pane fade show active" id="allRecipes" role="tabpanel" aria-labelledby="nav-allRecipes-tab">
-                Todas as Receitas
+                
+                <div class="card-group">
+                    <div class="card" *ngFor='let item of arrayPost' style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{item.title}}</h5>
+                          <p class="card-text">{{item.description}}</p>
+                          <p class="card-text">by:{{item.theme}}</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+
             </div>
 
             <div class="tab-pane fade" id="myRecipes" role="tabpanel" aria-labelledby="nav-myRecipes-tab">
